@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/encikbendi.github.io/hh-ticketing/static/css/main.4ae7aa22.css",
-    "main.js": "/encikbendi.github.io/hh-ticketing/static/js/main.e2bc3eae.js",
-    "index.html": "/encikbendi.github.io/hh-ticketing/index.html",
-    "main.4ae7aa22.css.map": "/encikbendi.github.io/hh-ticketing/static/css/main.4ae7aa22.css.map",
-    "main.e2bc3eae.js.map": "/encikbendi.github.io/hh-ticketing/static/js/main.e2bc3eae.js.map"
+    "main.css": "/hh-ticketing/static/css/main.4ae7aa22.css",
+    "main.js": "/hh-ticketing/static/js/main.e2bc3eae.js",
+    "index.html": "/hh-ticketing/index.html",
+    "main.4ae7aa22.css.map": "/hh-ticketing/static/css/main.4ae7aa22.css.map",
+    "main.e2bc3eae.js.map": "/hh-ticketing/static/js/main.e2bc3eae.js.map"
   },
   "entrypoints": [
     "static/css/main.4ae7aa22.css",
