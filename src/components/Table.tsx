@@ -2,13 +2,13 @@ import { useEffect, useMemo, useState } from "react"
 import { config } from "../config"
 import { getTicketFromVariationId } from "./helper"
 
-export const Table = ({search}: any) => {
+export const Table = ({search, query}: any) => {
     const [orders, setOrders] = useState<any>()
     const [page, setPage] = useState<number>(1)
 
     const handleChangePage = (newPage: number) => {
         setOrders([])
-        fetch(`${config.shop.apiURL}?consumer_key=${config.shop.consumer_key}&consumer_secret=${config.shop.consumer_secret}&product=1421&per_page=20&page=${newPage}`, {
+        fetch(`${config.shop.apiURL}?consumer_key=${config.shop.consumer_key}&consumer_secret=${config.shop.consumer_secret}&product=1421&per_page=20&page=${newPage}&search=${query || ''}`, {
             method: "GET",
             cache: 'no-store'
         })
@@ -21,6 +21,8 @@ export const Table = ({search}: any) => {
             }
         })
     }
+
+    useEffect(() => handleChangePage(page), [query])
 
     useEffect(() => handleChangePage(1), [])
 
